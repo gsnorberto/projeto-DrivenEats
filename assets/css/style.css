@@ -1,0 +1,115 @@
+:root {
+    --font-family-Righteous: 'Righteous', cursive;
+    --font-family-Roboto: 'Roboto', cursive;
+}
+
+
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+main{
+    margin-top: 92px;
+}
+
+.container{
+    width: 414px;
+}
+main .container{
+    position: relative;
+    padding-left: 19px;
+    background-color: #E5E5E5;
+    padding-bottom: 15px;
+}
+.logo{
+    height: 92px;
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    padding-top: 14px;
+    padding-left: 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo div:nth-child(1){
+    font-size: 44px;
+    font-family: var(--font-family-Righteous);
+    font-weight: 400;
+}
+.logo div:nth-child(2){
+    font-size: 18px;
+    font-family: var(--font-family-Roboto);
+}
+
+.title{
+    padding-top: 27px;
+    font-size: 26px;
+    color: #333333;
+    font-family: var(--font-family-Righteous);
+}
+.ads{
+    font-family: var(--font-family-Roboto);
+    overflow: scroll;
+    height: 216px;
+    margin-top: 19px;
+}
+.ads::-webkit-scrollbar{
+    display: none;
+}
+.slider{
+    display: flex;
+    height: 100%;
+}
+.ad{
+    width: 172px;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    margin-right: 16px;
+    padding: 18px 14px 13px 14px;
+}
+.ad img{
+    width: 144px;
+    height: auto;
+}
+.title_ad{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.desc_ad{
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    
+}
+.price_ad{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+footer{
+    position: fixed;
+    width: 414px;
+}
+
+footer .container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+}
+
+footer button{
+    font-size: 20px;
+    background-color: #CBCBCB;
+    color: #FFFFFF;
+    border-radius: 50px;
+    margin: 15px 25px;
+    padding: 8px 0;
+    border: 0;
+}
