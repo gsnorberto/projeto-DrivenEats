@@ -3,12 +3,18 @@
     --font-family-Roboto: 'Roboto', cursive;
 }
 
-
+body{
+    max-height: 100vh;
+    font-family: var(--font-family-Roboto);
+    background-color: rgb(240,240,240);
+}
 
 header{
     position: fixed;
+    left: calc(50% - 207px); // 207px equivale a metade do valor do container
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 main{
@@ -19,10 +25,16 @@ main{
     width: 414px;
 }
 main .container{
+    overflow-y: scroll;
+    max-height: 880px;
+    margin: 0 auto;
     position: relative;
     padding-left: 19px;
     background-color: #E5E5E5;
     padding-bottom: 15px;
+}
+main .container::-webkit-scrollbar{
+    display: none;
 }
 .logo{
     height: 92px;
@@ -35,11 +47,10 @@ main .container{
 .logo div:nth-child(1){
     font-size: 44px;
     font-family: var(--font-family-Righteous);
-    font-weight: 400;
 }
 .logo div:nth-child(2){
     font-size: 18px;
-    font-family: var(--font-family-Roboto);
+    
 }
 
 .title{
@@ -49,14 +60,11 @@ main .container{
     font-family: var(--font-family-Righteous);
 }
 .ads{
-    font-family: var(--font-family-Roboto);
-    overflow: scroll;
+    overflow-x: scroll;
     height: 216px;
     margin-top: 19px;
 }
-.ads::-webkit-scrollbar{
-    display: none;
-}
+
 .slider{
     display: flex;
     height: 100%;
@@ -68,37 +76,47 @@ main .container{
     border-radius: 9px;
     margin-right: 16px;
     padding: 18px 14px 13px 14px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 .ad img{
     width: 144px;
-    height: auto;
+    height: 87px;
+    border-radius: 4px;
+    object-fit: cover;
+    
 }
 .title_ad{
     margin-top: 8px;
     font-size: 16px;
     font-weight: 700;
+    color: #333333;
 }
 .desc_ad{
     margin-top: 8px;
     font-size: 15px;
     font-weight: 300;
     color: #A6A6A6;
-    
+    height: 49px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .price_ad{
-    margin-top: 10px;
+    
     font-size: 16px;
     font-weight: 400;
     
 }
 
 footer{
-    position: fixed;
     width: 414px;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: calc(50% - 207px); // 207px equivale a metade do valor do container
+    z-index: 1;
 }
 
 footer .container{
-    
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: column;
@@ -112,4 +130,10 @@ footer button{
     margin: 15px 25px;
     padding: 8px 0;
     border: 0;
+}
+
+@media (max-width: 414px){
+    .ads::-webkit-scrollbar{
+        display: none;
+    }
 }
