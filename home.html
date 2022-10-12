@@ -36,7 +36,7 @@
                 <div class="ads">
                     <div class="slider">
                         <!-- Ad -->
-                        <div class="ad selected">
+                        <div id="1" class="ad" onclick="clicked('main-course', 13.90, 1)">
                             <img src="./media/imgs/frango_yin_yang 1.png" alt="">
                             <div class="title_ad">Frango Yin Yang</div>
                             <div class="desc_ad">
@@ -46,7 +46,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="2" class="ad" onclick="clicked('main-course', 56.00, 2)">
                             <img src="./media/imgs/pizza.png" alt="">
                             <div class="title_ad">Pizza Portuguesa</div>
                             <div class="desc_ad">
@@ -56,7 +56,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="3" class="ad" onclick="clicked('main-course', 38.00, 3)">
                             <img src="./media/imgs/hamburguer.png" alt="">
                             <div class="title_ad">Hambúrguer</div>
                             <div class="desc_ad">
@@ -66,7 +66,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="4" class="ad" onclick="clicked('main-course', 14.90, 4)">
                             <img src="./media/imgs/panqueca.png" alt="">
                             <div class="title_ad">Panqueca</div>
                             <div class="desc_ad">
@@ -75,8 +75,6 @@
                             <div class="price_ad">R$ 14,90</div>
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -88,7 +86,7 @@
                 <div class="ads">
                     <div class="slider">
                         <!-- Ad -->
-                        <div class="ad selected">
+                        <div id="5" class="ad" onclick="clicked('drink', 10.90, 5)">
                             <img src="./media/imgs/suco1.png" alt="">
                             <div class="title_ad">Suco de Pêssego</div>
                             <div class="desc_ad">
@@ -98,7 +96,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="6" class="ad" onclick="clicked('drink', 11.90, 6)">
                             <img src="./media/imgs/suco2.png" alt="">
                             <div class="title_ad">Suco de Laranja</div>
                             <div class="desc_ad">
@@ -108,7 +106,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="7" class="ad" onclick="clicked('drink', 9.90, 7)">
                             <img src="./media/imgs/suco3.png" alt="">
                             <div class="title_ad">Suco de Mamão</div>
                             <div class="desc_ad">
@@ -118,7 +116,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="8" class="ad" onclick="clicked('drink', 8.90, 8)">
                             <img src="./media/imgs/suco4.png" alt="">
                             <div class="title_ad">Suco de Limão</div>
                             <div class="desc_ad">
@@ -140,7 +138,7 @@
                 <div class="ads">
                     <div class="slider">
                         <!-- Ad -->
-                        <div class="ad selected">
+                        <div id="9" class="ad" onclick="clicked('dessert', 7.90, 9)">
                             <img src="./media/imgs/sobremesa1.png" alt="">
                             <div class="title_ad">Pudim</div>
                             <div class="desc_ad">
@@ -150,7 +148,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="10" class="ad" onclick="clicked('dessert', 9.00, 10)">
                             <img src="./media/imgs/sobremesa2.png" alt="">
 
                             <div class="title_ad">Bolo de Pote</div>
@@ -161,7 +159,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="11" class="ad" onclick="clicked('dessert', 2.00, 11)">
                             <img src="./media/imgs/sobremesa3.png" alt="">
 
                             <div class="title_ad">Pé de Moleque</div>
@@ -172,7 +170,7 @@
                             <ion-icon class="icon_ad" name="checkmark-circle"></ion-icon>
                         </div>
                         <!-- Ad -->
-                        <div class="ad">
+                        <div id="12" class="ad" onclick="clicked('dessert', 14.90, 12)">
                             <img src="./media/imgs/sobremesa4.png" alt="">
 
                             <div class="title_ad">Sorvete</div>
@@ -189,7 +187,7 @@
     </main>
     <footer>
         <div class="container">
-            <button>Selecione os 3 itens <br> para fechar o pedido</button>
+            <button disabled onclick="review_order()" class="button_footer">Selecione os 3 itens <br> para fechar o pedido</button>
         </div>
     </footer>
 
