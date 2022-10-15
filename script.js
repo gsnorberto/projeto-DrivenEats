@@ -65,7 +65,7 @@ const confirm_order = () => {
         - Sobremesa: ${dessertInfoArray[0]}
         Total: R$ ${totalPrice}
 
-        nome: ${userName}
+        Nome: ${userName}
         Endereço: ${address}
     `);
 

@@ -150,6 +150,13 @@ main .container::-webkit-scrollbar{
     height: 216px;
     margin-top: 17px;
 }
+.ads::-webkit-scrollbar {
+    height: 10px;
+} 
+  
+.ads::-webkit-scrollbar-thumb {   
+background-color: darkgrey;   
+}
 
 .slider{
     display: flex;
