@@ -18,6 +18,91 @@ header{
     z-index: 1;
 }
 
+.box-background{
+    width: 416px;
+    height: 1073px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: calc(50% - 414px/2);
+    background-color: rgb(255,255,255, 0.1);
+    backdrop-filter: blur(30px);
+}
+
+.confirmation-box{
+    width: 377px;
+    height: 353px;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 377px/2);
+    background-color: #50D074;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    padding: 21px 25px;
+    color: #FFFFFF;
+}
+
+.box-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+
+.box-item
+{
+    margin-bottom: 13px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.box-item,
+.order-total-price
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-total-price{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.box-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-buttons button:nth-child(1){
+    width: 333px;
+    height: 52px;
+    border: 0;
+    color: #50D074;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.box-buttons button:nth-child(2){
+    border: 0;
+    color: #FFFFFF;
+    background-color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.box-buttons button:nth-child(1):hover,
+.box-buttons button:nth-child(2):hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
 main{
     margin-top: 92px;
 }
@@ -122,9 +207,9 @@ footer{
     width: 414px;
     background-color: #FFFFFF;
     position: fixed;
-    left: calc(50% - 207px); // 207px equivale a metade do valor do container
-    bottom: 5px;
-    z-index: 1;
+    left: calc(50% - 414px/2);
+    top: calc(1% + 950px);
+    z-index: 2;
 }
 
 footer .container{
@@ -134,7 +219,7 @@ footer .container{
     align-items: column;
 }
 
-footer button{
+.button_footer{
     font-size: 20px;
     background-color: #CBCBCB;
     color: #FFFFFF;

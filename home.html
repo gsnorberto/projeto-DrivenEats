@@ -26,6 +26,41 @@
             </div>
         </div>
     </header>
+
+    <!-- Confirmation Box -->
+    <div class="box-background" style="display: none;">
+        <div class="confirmation-box">
+            <div class="box-title">Confirme seu pedido</div>
+
+            <div class="box-item item-1">
+                <div class="item-title">-</div>
+                <div class="item-price">0,00</div>
+            </div>
+
+            <div class="box-item item-2">
+                <div class="item-title">-</div>
+                <div class="item-price">0,00</div>
+            </div>
+
+            <div class="box-item item-3">
+                <div class="item-title">-</div>
+                <div class="item-price">0,00</div>
+            </div>
+
+            <div class="order-total-price">
+                <div class="item-title">TOTAL</div>
+                <div class="item-price">R$ 0,00</div>
+            </div>
+
+            <div class="box-buttons">
+                <button onclick="confirm_order()" class="button_box"><a>Tudo certo, pode pedir!</a></button>
+                <button onclick="close_box()">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+
+
     <main>
         <div class="container">
             <!-- Main course -->
@@ -185,11 +220,15 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div class="container">
-            <button disabled onclick="review_order()" class="button_footer"> <a target="_blank">Selecione os 3 itens <br> para fechar o pedido</a> </button>
+            <button disabled onclick="review_order()" class="button_footer"> <a target="_blank">Selecione os 3 itens
+                    <br> para fechar o pedido</a> </button>
         </div>
     </footer>
+
+
 
     <script src="./script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
