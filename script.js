@@ -55,12 +55,18 @@ const review_order = () => {
 }
 
 const confirm_order = () => {
+    let userName = prompt('Qual seu nome?');
+    let address = prompt('Qual seu endereço?');
+
     let text = encodeURIComponent(`
         Olá, gostaria de fazer o pedido:
         - Prato: ${foodInfoArray[0]}
         - Bebida: ${drinkInfoArray[0]}
         - Sobremesa: ${dessertInfoArray[0]}
         Total: R$ ${totalPrice}
+
+        nome: ${userName}
+        Endereço: ${address}
     `);
 
     let link = 'https://wa.me/5573988983200?text=' + text;
